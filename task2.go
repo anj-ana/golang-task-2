@@ -6,12 +6,20 @@ import (
 )
 
 func main() {
+	var x float64
+	var y float64
+	var z float64
+	var a float64
+	fmt.Printf("Enter the value of x:\n")
+	fmt.Scanf("%f\n", &x)
+	fmt.Printf("Enter the value of y:\n")
+	fmt.Scanf("%f\n", &y)
+	fmt.Printf("Enter the value of z:\n")
+	fmt.Scanf("%f\n", &z)
+	fmt.Printf("Enter the value of a:\n")
+	fmt.Scanf("%f\n", &a)
 
-	x := 4.1
-	y := 2.2
-	z := 1.3
-	a := 2.0
 	c := ((math.Sqrt(x) + math.Sqrt(y)) * z) / a
-	fmt.Printf("((Sqrt(%.2f) + Sqrt(%.2f)) * %.2f) / %.2f = %.2f \n", x, y, z, a, c)
+	fmt.Printf("((Sqrt(%f) +Sqrt(%f)) * %f)/ %f = %f ", x, y, z, a, c)
 
 }
